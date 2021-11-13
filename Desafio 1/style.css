@@ -1,0 +1,123 @@
+@font-face {
+    font-family: "Public Sans menu";
+    src: url('./Fonte/static/PublicSans-Medium.ttf');
+}
+
+@font-face {
+    font-family: "Public Sans Logo";
+    src: url("./Fonte/static/PublicSans-ExtraBold.ttf");
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+}
+
+.titulo {
+    font-family: "Public Sans Logo";
+    display: flex;
+    flex-grow: 2;
+}
+
+.cabecalho nav {
+    font-family: "Public Sans menu";
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cabecalho ul {
+    display: flex;
+}
+
+.cabecalho nav li {
+    display: flex;
+}
+
+.cabecalho a {
+    display: flex;
+    flex-direction: row;
+    color: #000;
+    padding: 10px;
+}
+    
+
+a:hover {
+    background-color: #5BC241;
+    color: white;
+}
+
+a:link {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+}
+
+a:active {
+    color:white
+}
+
+a:visited {
+    color: none;
+}
+
+.cabecalho .cadastro {
+    display: flex;
+    background-color: #5BC241;
+    color: white;
+    border:none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.cabecalho img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+}
+
+@media (max-width: 425px) {
+    .cabecalho {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .titulo {
+        display: block;
+        padding: 0px;
+    }
+
+    .cabecalho nav {
+        display: block;
+        text-align: center;
+    }
+    
+    .cabecalho ul {
+        display: block;
+        text-align: center;
+    }
+
+    .cabecalho nav li {
+     display: block;
+     text-align: center;
+    }
+
+    .cabecalho a {
+        display: block;
+        text-align: center;
+    }
+
+    .cabecalho .cadastro {
+        display: inline-block;
+        text-align: center;
+        width: 25%;
+    }
+    
+    .cabecalho img {
+        display: inline-block;
+        text-align: center;
+    }
+}
